@@ -1,0 +1,38 @@
+[
+  {
+    "id": "big-buck-bunny",
+    "title": "Big Buck Bunny",
+    "year": 2008,
+    "genre": "Мультфильм",
+    "description": "Открытый короткометражный фильм Blender Foundation (CC BY 3.0).",
+    "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+    "source": { "type": "file", "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" }
+  },
+  {
+    "id": "elephants-dream",
+    "title": "Elephants Dream",
+    "year": 2006,
+    "genre": "Фантастика",
+    "description": "Первый открытый фильм Blender Foundation (CC BY 2.5).",
+    "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+    "source": { "type": "file", "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" }
+  },
+  {
+    "id": "sintel",
+    "title": "Sintel",
+    "year": 2010,
+    "genre": "Фэнтези",
+    "description": "Открытый фильм Blender Foundation (CC BY 3.0).",
+    "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+    "source": { "type": "file", "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" }
+  },
+  {
+    "id": "tears-of-steel",
+    "title": "Tears of Steel",
+    "year": 2012,
+    "genre": "Фантастика",
+    "description": "Открытый фильм Blender Foundation (CC BY 3.0).",
+    "poster": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+    "source": { "type": "file", "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" }
+  }
+]

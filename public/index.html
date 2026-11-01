@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WatchParty — смотреть вместе</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><h1>Watch<span>Party</span></h1></header>
+  <main>
+    <h2>Смотрите вместе с друзьями</h2>
+    <div class="row">
+      <input id="url" size="50" placeholder="Ссылка на YouTube, .mp4 или .m3u8">
+      <button id="go">Создать комнату</button>
+    </div>
+    <h3 style="margin-top:32px">Каталог</h3>
+    <div id="grid" class="grid"></div>
+  </main>
+<script>
+async function createRoom(body) {
+  const r = await fetch('/api/rooms', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  const data = await r.json();
+  if (!r.ok) return alert(data.error);
+  location.href = '/room.html?id=' + data.id;
+}
+document.getElementById('go').onclick = () => createRoom({ url: document.getElementById('url').value.trim() });
+
+fetch('/api/catalog').then(r => r.json()).then(list => {
+  const grid = document.getElementById('grid');
+  for (const m of list) {
+    const b = document.createElement('button');
+    b.className = 'card';
+    b.innerHTML = `<img alt="" loading="lazy"><div class="info"><b></b><div class="meta"></div></div>`;
+    b.querySelector('img').src = m.poster;
+    b.querySelector('b').textContent = m.title;
+    b.querySelector('.meta').textContent = `${m.year} · ${m.genre}`;
+    b.onclick = () => createRoom({ movieId: m.id });
+    grid.appendChild(b);
+  }
+  grid.firstChild?.focus();
+});
+</script>
+<script src="/tvnav.js"></script>
+</body>
+</html>
