@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cdn/krtech/barrier/style/styles.css">
+    <meta http-equiv="CACHE-CONTROL" content="no-cache">
+    <meta http-equiv="EXPIRES" content="Mon, 22 Jul 2002 01:00:00 GMT">
+    <title>Включена DDos защита</title>
+</head>
+<body>
+<section class="main">
+    <div class="v4"></div>
+    <div class="v3"></div>
+    <div class="v2"></div>
+    <div class="v1"></div>
+
+    <div class="container">
+        <div class="second">
+            <div class="top_logo"></div>
+            <div class="middle">
+                <h1 class="middle__h1">
+                    Запущена Система<br /> защиты веб-приложений
+                </h1>
+                <div class="middle__text">
+                    Идет проверка трафика <br>
+                    При успешной проверке <b id="domain">Название сайта</b> загрузится автоматически <br>
+                    Проверка завершится через  <span class="middle_timer">5 секунд</span>
+                </div>
+                <div class="loader"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom__krtech">
+                <a href="https://krtech.ru/" title="АО Крымтехнологии">
+                    <div class="bottom__logo"></div>
+                </a>
+                <div class="bottom__divider-block">
+                        <span class="bottom__divider">
+
+                        </span>
+                </div>
+                <div class="bottom__developer">
+                    <div>Разработка</div>
+                    <div><nobr>АО «Крымтехнологии»</nobr></div>
+                </div>
+            </div>
+            <div class="bottom__support">
+                <span class="bottom_wrap">Техническая поддержка: </span>
+                <span class="bottom_wrap"><nobr>+7 (978) 000-09-10</nobr></span>
+                <span class="bottom_wrap">tehadmin@krtech.ru</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/cdn/krtech/barrier/scripts/short.js"></script>
+</body>
+</html>
